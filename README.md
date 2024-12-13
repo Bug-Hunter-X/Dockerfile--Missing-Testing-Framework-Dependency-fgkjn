@@ -1,0 +1,1 @@
+This repository demonstrates a common error in Dockerfiles:  forgetting to install necessary packages.  The original `Dockerfile` attempts to run unit tests, but it fails because the `unittest` module is not explicitly added to the image. The `Dockerfile.fixed` version corrects this by adding an appropriate `RUN` command to install the `unittest` module.
